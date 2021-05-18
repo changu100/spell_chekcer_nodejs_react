@@ -6,3 +6,94 @@ body {
 a {
   color: #00B7FF;
 }
+
+h2 {
+  font-size: 20px;
+}
+
+
+
+#timer{
+  position: relative;
+  font-size: 40px;
+  left : 20px;
+}
+
+#output{
+  position: relative;
+  font-size: 20px;
+  top: 50px;
+  left : 20px;
+}
+
+.fspell {
+
+  /*background-color: blue;*/
+
+  /*border: none;*/
+
+  color: black;
+
+  padding: 15px 30px;
+
+  text-align: center;
+
+  text-decoration: none;
+
+  display: inline-block;
+
+  font-size: 16px;
+
+  margin: 4px 20px;
+
+  cursor: pointer;
+
+}
+
+.dspell {
+
+  /*background-color: blue;*/
+
+  /*border: none;*/
+
+  color: black;
+
+  padding: 15px 30px;
+
+  text-align: center;
+
+  text-decoration: none;
+
+  display: inline-block;
+
+  font-size: 16px;
+
+  margin: 4px 20px;
+
+  cursor: pointer;
+
+}
+
+.gamestart {
+
+  /*background-color: blue;*/
+
+  /*border: none;*/
+
+  color: black;
+
+  padding: 15px 100px;
+
+  text-align: center;
+
+  text-decoration: none;
+
+  display: inline-block;
+
+  font-size: 16px;
+
+  margin: 4px 20px;
+
+  cursor: pointer;
+
+}

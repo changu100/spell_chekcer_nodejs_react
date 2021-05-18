@@ -1,5 +1,38 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+
+  span#timer 00:00:00 
+
+  div.topline
+    h2 top
+    input.dspell(type="button" value ="D_spell" )
+    input.fspell(type="button" value ="F_spell" )
+
+  div.jgline
+    h2 jungle
+    input.dspell(type="button" value ="D_spell" )
+    input.fspell(type="button" value ="F_spell" )
+
+  div.midline
+    h2 mid
+    input.dspell(type="button" value ="D_spell" )
+    input.fspell(type="button" value ="F_spell" )
+
+  div.adline
+    h2 ad carry
+    input.dspell(type="button" value ="D_spell" )
+    input.fspell(type="button" value ="F_spell" )
+    
+  div.supline
+    h2 support
+    input.dspell(type="button" value ="D_spell" )
+    input.fspell(type="button" value ="F_spell" )
+  
+  div
+    h2 GameStart
+    input.gamestart(type="button" value ="game start" )
+
+
+  div
+    span#output top jg mid ad sup 
