@@ -7,7 +7,7 @@ let btncopy = document.querySelector(".resultCopy");
 let bstart = 0;
 let dspell  = [0,0,0,0,0];
 let f_dspell  = [0,0,0,0,0];
-let position  = ["top","jg","mid","ad","sup"];
+let position  = ["Top","Jg","Mid","Ad","Sup"];
 //dpstimer.innerHTML  = "12345678"
 
 btnstart.onclick = function (){
@@ -16,7 +16,7 @@ btnstart.onclick = function (){
     bstart = 1;
     for(var i = 0 ; i < 5 ; i++){
         f_dspell[i] = 0;
-        btndspell[i].value = "D_spell";
+        btndspell[i].value = "Flash";
     }
 }
 
@@ -64,7 +64,7 @@ function spellTimer(gametime,btn,index,now){
     if(timer > 0)
         btn.value = timer;
     else {
-        btn.value = "D_spell";
+        btn.value = "Flash";
         f_dspell[index] = 0;
     }
     return btn.value;
@@ -83,10 +83,12 @@ var x = setInterval(function(){
         {
             if(f_dspell[i] == 1){
                 spellTimer(gameTime,btndspell[i],i,now);
-                result += position[i];
+                result += position[i] + " ";
                 result += dateToString(dspell[i]+300, 11, "");
                 result += "  "
             }
+            else
+                btndspell[i].value = "Flash";
             //console.log(btndspell[i].parentNode.firstChild.textContent);
             
         }

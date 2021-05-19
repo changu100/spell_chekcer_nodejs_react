@@ -1,59 +1,61 @@
 extends layout
-
+//https://naltatis.github.io/jade-syntax-docs/#text
 block content
 
-  h1 spellTimer
-  p 스펠 시간체크를 위해 제작하였습니다. 
-  p 1. Game 시작시 GameStart 버튼을 눌러줍니다 
-  p 2. 상대가 사용한 스펠 버튼을 눌러줍니다 
-  p 3. 결과를 체팅창에 붙여넣습니다 
- 
+  div.main
+    h1 SpellTimer
+    p 스펠 시간체크를 위해 제작하였습니다. 
+    p 1. Game 시작시 GameStart 버튼을 눌러줍니다 
+    p 2. 상대가 사용한 스펠 버튼을 눌러줍니다 
+    p 3. 결과를 채팅창에 붙여넣습니다 
+  
+    div
+      h1 주의사항
+      p V01 로 스펠 점멸로 가정하고 제작하였습니다. 차츰 업그레이드해 나가겠습니다.
+      p 버그 리포팅 email 주소 : blue_rose17@naver.com
 
+    br
+    br
+    h2 GameTimer
+    span#timer 00:00:00 
+    br
+    h2 result
+    div.result1
+      span#output Top 0500 Jg 0700 Mid 0532  
+    div.result2
+      input.resultCopy(type="button" value ="Copy" )
 
-  h1 GameTimer
-  span#timer 00:00:00 
+    br
+    br
+    br
+    input.gamestart(type="button" value ="Game Start" )
   div.tables
     div.topline
-      h2 top
-      input.dspell(type="button" value ="D_spell" )
-      input.fspell(type="button" value ="F_spell" )
+      h2 Top
+      input.dspell(type="button" value ="Flash" )
+      //input.fspell(type="button" value ="F_spell" )
 
     div.jgline
-      h2 jungle
-      input.dspell(type="button" value ="D_spell" )
-      input.fspell(type="button" value ="F_spell" )
+      h2 Jungle
+      input.dspell(type="button" value ="Flash" )
+      //input.fspell(type="button" value ="F_spell" )
 
     div.midline
-      h2 mid
-      input.dspell(type="button" value ="D_spell" )
-      input.fspell(type="button" value ="F_spell" )
+      h2 Mid
+      input.dspell(type="button" value ="Flash" )
+      //input.fspell(type="button" value ="F_spell" )
 
     div.adline
-      h2 ad carry
-      input.dspell(type="button" value ="D_spell" )
-      input.fspell(type="button" value ="F_spell" )
+      h2 Ad Carry
+      input.dspell(type="button" value ="Flash" )
+      //input.fspell(type="button" value ="F_spell" )
       
     div.supline
-      h2 support
-      input.dspell(type="button" value ="D_spell" )
-      input.fspell(type="button" value ="F_spell" )
+      h2 Support
+      input.dspell(type="button" value ="Flash" )
+      //input.fspell(type="button" value ="F_spell" )
     
-    div
-      h2 GameStart
-      input.gamestart(type="button" value ="Game Start" )
-      input.resultCopy(type="button" value ="result Copy" )
+    
 
-
-  div
-    span#output top jg mid ad sup 
-    br
-    br
-    br
-    br
-    br
-  div
-    h1 주의사항
-    p.
-      V01 로 D스펠 점멸로 가정하고 제작하였습니다. 차츰 업그레이드해 나가겠습니다.
 
   script(src="/javascripts/index.js")
