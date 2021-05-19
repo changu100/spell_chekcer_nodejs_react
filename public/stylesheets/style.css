@@ -6,3 +6,130 @@ body {
 a {
   color: #00B7FF;
 }
+
+h2 {
+  font-size: 20px;
+}
+
+
+
+#timer{
+  position: relative;
+  font-size: 40px;
+  left : 20px;
+}
+
+#output{
+  background-color: black;
+  color: white;
+  position: relative;
+  font-size: 20px;
+  top: 40px;
+  left : 20px;
+  margin: 4px 20px;
+  padding: 15px 30px;
+  
+}
+
+.fspell {
+
+  /*background-color: blue;*/
+
+  /*border: none;*/
+
+  color: black;
+
+  width: 200px;
+  padding: 15px 30px;
+
+  text-align: center;
+
+  text-decoration: none;
+
+  display: inline-block;
+
+  font-size: 2rem;
+
+  margin: 4px 20px;
+
+  cursor: pointer;
+  border-radius: 5px;
+
+}
+
+.dspell {
+
+  /*background-color: blue;*/
+
+  /*border: none;*/
+
+  color: black;
+
+  padding: 15px 30px;
+  width: 200px;
+
+  text-align: center;
+
+  text-decoration: none;
+
+  display: inline-block;
+
+  font-size: 2rem;
+
+  margin: 4px 20px;
+
+  cursor: pointer;
+  border-radius: 5px;
+
+}
+
+.gamestart {
+
+  /*background-color: blue;*/
+
+  /*border: none;*/
+
+  color: black;
+
+  width: 200px;
+  padding: 15px 30px;
+
+  text-align: center;
+
+  text-decoration: none;
+
+  display: inline-block;
+
+  font-size: 20px;
+
+  margin: 4px 20px;
+
+  cursor: pointer;
+  border-radius: 5px;
+
+}
+
+.resultCopy {
+
+  /*background-color: blue;*/
+
+  /*border: none;*/
+
+  color: black;
+border-radius: 5px;
+  width: 200px;
+  padding: 15px 30px;
+
+  text-align: center;
+
+  text-decoration: none;
+
+  display: inline-block;
+
+  font-size: 20px;
+
+  margin: 4px 20px;
+
+  cursor: pointer;
+  border-radius: 5px;
+}
