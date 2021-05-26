@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet"/>
+</head>
+<body>
+    <div class="main">
+        <h1>SpellTimer</h1>
+        <p> 스펠 시간체크를 위해 제작하였습니다. </p>
+        <p> 1. Game 시작시 GameStart 버튼을 눌러줍니다 </p>
+        <p> 2. 상대가 사용한 스펠 버튼을 눌러줍니다 </p>
+        <p> 3. 결과를 채팅창에 붙여넣습니다 </p>
+        <div>
+            <h1>주의사항</h1>
+            <p> 프로토타입으로 스펠은 점멸로 가정하고 제작하였습니다. 차츰 업그레이드해 나가겠습니다.</p>
+            <p> 버그 리포팅 email 주소 : blue_rose17@naver.com</p>
+        </div>
+           
+        <input type="button" class="gamestart" value="Game Start" />
+        <h2>GameTimer</h2>
+        <span id="timer">00:00:00 </span>   
+        <h2>result</h2>
+        <span id="output" readonly>Top0500 Jgl0700 Mid0532</span>
+        <input type="button" class="resultCopy" value="Copy"/>
+    </div>
+    <div class="tables">
+        <div class="topline">
+            <h2>TopLane</h2>
+            <input type="button" class="dspell" value="D"/>
+            <input type="button" class="fspell" value="F"/>
+        </div>
+        <div class="jglline">
+            <h2>Jungle</h2>
+            <input type="button" class="dspell" value="D"/>
+            <input type="button" class="fspell" value="F"/>
+        </div>
+        <div class="midline">
+            <h2>MidLane</h2>
+            <input type="button" class="dspell" value="D"/>
+            <input type="button" class="fspell" value="F"/>
+        </div>
+        <div class="addline">
+            <h2>ADCarry</h2>
+            <input type="button" class="dspell" value="D"/>
+            <input type="button" class="fspell" value="F"/>
+        </div>
+        
+        <div class="supline">
+            <h2>Supporter</h2>
+            <input type="button" class="dspell" value="D"/>
+            <input type="button" class="fspell" value="F"/>
+        </div>
+    </div>
+    
+    <script src="index.js"></script>    
+</body>
+</html>
+<!-- 
+1. Spell 시계방향 쉐이딩처리
+2. 
+
+ -->

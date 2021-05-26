@@ -1,7 +1,7 @@
 
 body {
   padding: 50px;
-  background-color: tomato;
+  background-color: #13D8F6;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
@@ -25,64 +25,34 @@ h2 {
   background-color: black;
   color: white;
   position: relative;
-  width: 100%;
   font-size: 20px;
   margin: 4px 20px;
   padding: 15px 30px;
   
 }
 
-.fspell {
-
-  /*background-color: blue;*/
-
-  /*border: none;*/
-
+.dspell, .fspell {
   color: black;
-
-  width: 200px;
-  padding: 15px 30px;
-
+  padding:auto;
+  width: 120px;
+  height: 120px;
   text-align: center;
-
   text-decoration: none;
-
   display: inline-block;
-
   font-size: 2rem;
-
-  margin: 4px 20px;
-
   cursor: pointer;
-  border-radius: 5px;
-
+  border-radius: 11px;
+  box-shadow: 8px 8px 2px 1px rgba(0, 0, 255, .2);
+  z-index: 1000;
 }
 
-.dspell {
-
-  /*background-color: blue;*/
-
-  /*border: none;*/
-
-  color: black;
-
-  padding: 15px 30px;
-  width: 200px;
-
-  text-align: center;
-
-  text-decoration: none;
-
-  display: inline-block;
-
-  font-size: 2rem;
-
-  margin: 4px 20px;
-
-  cursor: pointer;
-  border-radius: 5px;
-
+.shadows{ 
+  background-color:rgba(0, 0, 0, 0.5); /*살짝 투명한 검정으로 배경색*/ 
+  width: 120px;
+  height: 120px;
+  /* z-index: 1000; */
 }
+
 
 .gamestart {
 
@@ -91,6 +61,7 @@ h2 {
   /*border: none;*/
 
   color: black;
+
   width: 70%;
   padding: 15px 30px;
 
@@ -110,12 +81,16 @@ h2 {
 }
 
 .resultCopy {
+
   /*background-color: blue;*/
+
   /*border: none;*/
+
   color: black;
   border-radius: 5px;
   width: 10%;
   padding: 15px 0px;
+
   text-align: center;
 
   text-decoration: none;
@@ -138,6 +113,7 @@ h2 {
 }
 
 .tables{
+  width: 30%;
   float: right;
   box-sizing: border-box;
 }

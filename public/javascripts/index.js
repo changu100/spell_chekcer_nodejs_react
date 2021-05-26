@@ -23,7 +23,6 @@ btnstart.onclick = function (){
 
 btncopy.onclick = function(){
     
-    
     const element = document.createElement('textarea');
     element.value = output.innerHTML;
     console.log( element.value );
