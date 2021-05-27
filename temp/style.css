@@ -1,39 +1,36 @@
-
 body {
   padding: 50px;
-  background-color: #13D8F6;
+  background-color: #13d8f6;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 a {
-  color: #00B7FF;
+  color: #00b7ff;
 }
 
 h2 {
   font-size: 20px;
 }
 
-
-
-#timer{
+#timer {
   position: relative;
   font-size: 40px;
-  left : 20px;
+  left: 20px;
 }
 
-#output{
+#output {
   background-color: black;
   color: white;
   position: relative;
   font-size: 20px;
   margin: 4px 20px;
   padding: 15px 30px;
-  
 }
 
-.dspell, .fspell {
+.dspell,
+.fspell {
   color: black;
-  padding:auto;
+  padding: auto;
   width: 120px;
   height: 120px;
   text-align: center;
@@ -42,20 +39,27 @@ h2 {
   font-size: 2rem;
   cursor: pointer;
   border-radius: 11px;
-  box-shadow: 8px 8px 2px 1px rgba(0, 0, 255, .2);
+  box-shadow: 8px 8px 2px 1px rgba(0, 0, 255, 0.2);
   z-index: 1000;
+  transition-property: all;
+  transition-timing-function: linear;
+  /* background-color: rgba(0, 0, 0, 0.8); */
+  transition-duration: 30s;
+}
+.dspell .shadows {
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
-.shadows{ 
-  background-color:rgba(0, 0, 0, 0.5); /*살짝 투명한 검정으로 배경색*/ 
+.shadows {
+  /* background-color: rgba(0, 0, 0, 0.1); */
+  /* background-color: black; */
   width: 120px;
   height: 120px;
   /* z-index: 1000; */
+  background-color: #00b7ff;
 }
 
-
 .gamestart {
-
   /*background-color: blue;*/
 
   /*border: none;*/
@@ -77,11 +81,9 @@ h2 {
 
   cursor: pointer;
   border-radius: 5px;
-
 }
 
 .resultCopy {
-
   /*background-color: blue;*/
 
   /*border: none;*/
@@ -106,13 +108,13 @@ h2 {
   min-width: 30px;
 }
 
-.main{
+.main {
   width: 70%;
   float: left;
   box-sizing: border-box;
 }
 
-.tables{
+.tables {
   width: 30%;
   float: right;
   box-sizing: border-box;
